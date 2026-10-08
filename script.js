@@ -73,8 +73,8 @@ $("#s2 .lock .wall").addEventListener("click", () => go(3));
 // clock
 function tick() {
   const d = new Date();
-  $("#clock").textContent = d.toLocaleTimeString("id-ID", { hour: "2-digit", minute: "2-digit" }).replace(".", ":");
-  $("#date").textContent = d.toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long", year: "numeric" });
+  $("#clock").textContent = "00.00";
+  $("#date").textContent = "Thursday, 01 Oktober 2026";
 }
 setInterval(tick, 20000); tick();
 
