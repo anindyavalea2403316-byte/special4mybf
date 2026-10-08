@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>for Zidan ♡</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="floaty" id="floaty"></div>
+<button id="music" class="hidden" aria-label="music">♪</button>
+<audio id="audio" src="assets/birthday.mp3" loop preload="none"></audio>
+
+<!-- 1 opening -->
+<section class="screen active" id="s1">
+  <h1 class="script">for someone special ♡</h1>
+  <p>I made a little something for you...</p>
+  <div class="gift"><div class="lid"></div><div class="box"></div></div>
+  <button class="btn" data-go="2">open it ♡</button>
+</section>
+
+<!-- 2 lockscreen -->
+<section class="screen" id="s2">
+  <div class="phone lock">
+    <img class="wall" data-photo="0" alt="">
+    <div class="lockin">
+      <div class="clock" id="clock">00:00</div>
+      <div class="date" id="date"></div>
+      <h2 class="script">Happy Birthday, Zidan ♡</h2>
+      <div class="hearts">♡ ✦ ♡</div>
+    </div>
+    <button class="btn unlock" data-go="3">swipe to unlock →</button>
+  </div>
+</section>
+
+<!-- 3 chat -->
+<section class="screen" id="s3">
+  <h2 class="script">how it all started...</h2>
+  <div class="phone chat">
+    <div class="chead"><span class="av">Z</span><div><b>Zidan</b><small id="status">online</small></div></div>
+    <div class="cbody" id="chatBody"><div class="daychip" id="chatDay"></div></div>
+  </div>
+  <p class="after" id="chatAfter">and somehow... that little conversation became something I never expected ♡</p>
+  <button class="btn hidden" id="chatNext" data-go="4">keep going →</button>
+</section>
+
+<!-- 4 then now -->
+<section class="screen" id="s4">
+  <div class="tn"><div class="tnbox t1"><h2>THEN</h2><img class="pol" data-photo="1" alt=""></div>
+  <div class="arrow t2">→</div>
+  <div class="tnbox t3"><h2>NOW</h2><img class="pol" data-photo="0" alt=""></div></div>
+  <p class="after t4">look how far we've come ♡</p>
+  <button class="btn t4" data-go="5">keep going →</button>
+</section>
+
+<!-- 5 scrapbook -->
+<section class="screen" id="s5">
+  <h2 class="script">little moments I want to keep ♡</h2>
+  <div class="scrap" id="scrap"></div>
+  <button class="btn" data-go="6">next memory →</button>
+</section>
+
+<!-- 6 randomizer -->
+<section class="screen" id="s6">
+  <h2 class="script">birthday randomizer 🎀</h2>
+  <p>okay, one tiny game before the serious birthday wishes...</p>
+  <div class="qcard" id="qcard">?</div>
+  <button class="btn" id="ask">ask me something ♡</button>
+  <button class="btn ghost" data-go="7">skip the game →</button>
+</section>
+
+<!-- 7 wish -->
+<section class="screen" id="s7">
+  <h2 class="script">one tiny birthday challenge ♡</h2>
+  <p>Before you continue, make one wish for yourself.</p>
+  <input id="wish" type="text" maxlength="120" placeholder="type your wish here..." autocomplete="off">
+  <button class="btn" id="keepWish">keep my wish ♡</button>
+  <p class="after hidden" id="wishReply">I hope this year brings you closer to everything you've been wishing for. ♡</p>
+  <button class="btn hidden" id="wishNext" data-go="8">continue →</button>
+</section>
+
+<!-- 8 message -->
+<section class="screen" id="s8">
+  <small class="tiny">a little birthday message</small>
+  <p class="msg" id="msg"></p>
+  <img class="pol" data-photo="2" alt="">
+  <button class="btn" data-go="9">open →</button>
+</section>
+
+<!-- 9 wishes -->
+<section class="screen" id="s9">
+  <h2 class="script">a few things I wish for you ♡</h2>
+  <div class="cards" id="cards"></div>
+  <button class="btn" data-go="10">keep going →</button>
+</section>
+
+<!-- 10 envelope -->
+<section class="screen" id="s10">
+  <h2 class="script">one last thing...</h2>
+  <div class="env" id="env"><div class="flap"></div><div class="paper" id="paper"></div><div class="front"></div><span class="tag">open when you're ready ♡</span></div>
+  <button class="btn hidden" id="letterNext" data-go="11">open →</button>
+</section>
+
+<!-- 11 final -->
+<section class="screen" id="s11">
+  <img class="pol big" data-photo="0" alt="">
+  <h1 class="script">Happy Birthday, Zidan ♡</h1>
+  <p>Here's to another beautiful year of you.</p>
+  <small class="tiny">made with love ♡</small>
+  <button class="btn" id="replay">replay from the beginning</button>
+</section>
+
+<div id="lb" class="lb hidden"><button id="lbx" aria-label="close">✕</button><img id="lbimg" alt=""></div>
+<script src="script.js"></script>
+</body>
+</html>
