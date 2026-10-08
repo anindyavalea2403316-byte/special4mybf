@@ -7,19 +7,21 @@ const birthdayData = {
 };
 const chatMessages = [
   { sender: "Z", text: "namamu siapa?", time: "19.42" },
+  {sender: "Z", text: 'kalo dijurusanku paling yahh matkul dasar ama mtk lahh, masih nyantai", time: "19.42"}
   { sender: "L", text: "aku lea, kamu?", time: "19.43" },
+  { sender: "L", text: "ouh gitu yaa?", time: "19.43" },
   { sender: "Z", text: "aku zidan.", time: "19.43" }
 ];
 const chatDayLabel = "the very first day ♡";
 // 0 = main, 1 = night view, 2 = park (swap paths/filenames freely)
-const photos = ["assets/main.jpeg", "assets/photo1.jpeg", "assets/photo2.png", "assets/photo3.png", "assets/photo4.png", "assets/photo5.jpg"];
+const photos = ["main.jpeg", "photo1.jpeg", "photo2.png", "photo3.png", "photo4.png", "aphoto5.jpg"];
 const scrapbook = [
   { p: 1, cap: "one of my favorite days ♡", s: "🎀" },
   { p: 2, cap: "this moment >>>", s: "⭐" },
   { p: 3, cap: "still makes me smile", s: "♡" },
   { p: 4, cap: "just us", s: "✦" },
   { p: 5, cap: "a memory worth keeping", s: "🌷" },
-  { p: 6, cap: "my favorite person", s: "🎀" }
+  { p: 0, cap: "my favorite person", s: "🎀" }
 ];
 const questions = [
   "What's one thing you think I love most about you?", "Who fell first? 👀", "What's our most random memory?",
